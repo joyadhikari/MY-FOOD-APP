@@ -1,0 +1,252 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #fff;
+  color: #333;
+  line-height: 1.6;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+header {
+  background: #fff;
+  padding: 1rem 0;
+  border-bottom: 1px solid #eee;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.nav ul {
+  display: flex;
+  list-style: none;
+  gap: 1.5rem;
+}
+
+.nav a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+
+}
+
+nav a:hover {
+  color: #e67e22;
+}
+.tags :hover {
+  color: #000000;
+  text-decoration: underline;
+}
+
+.login-btn {
+  background: orange;
+  border: none;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+}
+
+.login-btn:hover {
+  background-color: #d35400;
+}
+
+.hero {
+  /* background-image: url("/image/food.jpg")no-repeat center center/cover; */
+  /* background: #fff4ed; */
+  background: url("/image/food.jpg")no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding: 3rem 0;
+  text-align: center;
+}
+
+.hero-text h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.highlight {
+  color: orange;
+}
+
+.search-bar {
+  margin: 1.5rem auto;
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.search-bar input {
+  padding: 0.5rem;
+  width: 300px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.search-bar button {
+  background: orange;
+  border: none;
+  color: #fff;
+  padding: 0.6rem 1rem;
+  border-radius: 5px;
+}
+
+.tags {
+  margin-top: 0.5rem;
+  color: #666;
+}
+
+.tags a {
+  margin: 0 0.5rem;
+  color: #333;
+  text-decoration: none;
+}
+
+.featured {
+  background: #fafafa;
+  padding: 3rem 0;
+}
+
+.featured-recipes {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.main-featured {
+  background: #fff;
+  padding: 1rem;
+  border-radius: 10px;
+}
+
+.main-featured img {
+  width: 40%;
+  border-radius: 10px;
+}
+
+.main-featured:hover {
+  color: orange;
+  transform: scale(1.05);
+  transition: all 0.3s ease;
+}
+
+.recipe-grid {
+  display: flex;
+  gap: 1rem;
+}
+.recipe-grid a:hover {
+  color: orange;
+  transform: scale(1.05);
+  transition: all 0.3s ease;
+}
+
+.recipe-card:hover {
+  transform: scale(1.03) translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.recipe-card {
+  flex: 1;
+  background: #fff;
+  padding: 0.5rem;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.recipe-card img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+
+/* Hover effect for h4 in recipe cards */
+.recipe-card h4:hover {
+  color: orange;
+  transform: scale(1.05);
+  transition: all 0.3s ease;
+}
+
+/* .recipe-card-h4:hover {
+  transform: scale(1.05) translateY(-5px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+} */
+
+.categories {
+  padding: 3rem 0;
+  text-align: center;
+}
+
+.category-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.category {
+  background: #f8f8f8;
+  padding: 1rem;
+  border-radius: 10px;
+  font-weight: bold;
+}
+
+.category:hover {
+  background: #ffe5b4;
+  /* light orange shade */
+  transform: scale(1.05);
+}
+
+footer {
+  background: #f0f0f0;
+  padding: 2rem 0;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.footer-cols {
+  display: flex;
+  gap: 2rem;
+}
+
+.footer-cols ul {
+  list-style: none;
+  margin-top: 0.5rem;
+}
+
+.footer-cols a {
+  text-decoration: none;
+  color: #333;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+.footer-h4 a:hover{
+  color: orange;
+  transform: translateX(5px);
+  text-shadow: 1px 1px 5px rgba(255, 165, 0, 0.3);
+}
+.footer-cols a:hover {
+  color: orange;
+  transform: translateX(5px);
+  text-shadow: 1px 1px 5px rgba(255, 165, 0, 0.3);
+}
