@@ -34,10 +34,21 @@ header {
   align-items: center;
 }
 
-.logo {
-  font-weight: bold;
-  font-size: 1.2rem;
+/* Right side container */
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 25px;
 }
+
+/* Nav links */
+.nav-link {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  position: relative;
+}
+
 
 .nav ul {
   display: flex;
@@ -49,7 +60,7 @@ header {
   text-decoration: none;
   color: #333;
   font-weight: 500;
-
+  
 }
 
 nav a:hover {
@@ -60,12 +71,20 @@ nav a:hover {
   text-decoration: underline;
 }
 
+.logo {
+  font-weight: bold;
+  font-size: 1.2rem;
+  letter-spacing: 10PX;
+}
+
+/* Sign in button */
 .login-btn {
   background: orange;
-  border: none;
-  color: #fff;
-  padding: 0.5rem 1rem;
-  border-radius: 5px;
+  color: white;
+  padding: 8px 18px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 600;
 }
 
 .login-btn:hover {
@@ -145,12 +164,56 @@ nav a:hover {
   width: 40%;
   border-radius: 10px;
 }
-
-.main-featured:hover {
+.main-featured h3:hover {
   color: orange;
   transform: scale(1.05);
   transition: all 0.3s ease;
 }
+.main-featured p:hover{
+  color: orange;
+  transform: scale(1.05);
+  transition: all 0.1s ease;
+}
+/* .main-featured p:hover{
+  transform: scale(1.05) translateY(-5px);
+    box-shadow: 0 5px 15px #00bcd450;
+} */
+/* .main-featured p:hover{
+  color: orange;
+  transform: scale(1.05);
+  transition: all 0.1s ease;
+} */
+
+.main-featured:hover {
+  /* color: orange; */
+  transform: scale(1.05);
+  transition: all 0.3s ease;
+}
+.main-featured {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  background: #fff;
+  padding: 1.5rem;
+  border-radius: 12px;
+}
+
+/* Image section */
+.image-wrapper {
+  position: relative;
+  width: 45%;
+}
+
+.image-wrapper img {
+  width: 100%;
+  border-radius: 12px;
+}
+
+/* Text section */
+.main-text {
+  flex: 1;
+}
+
 
 .recipe-grid {
   display: flex;
@@ -255,13 +318,74 @@ footer {
 } */
 
 .footer-h4 a:hover{
-  color: orange;
+  color: #ffa500;
   transform: translateX(5px);
   text-shadow: 1px 1px 5px rgba(255, 165, 0, 0.3);
 }
 
 .footer-cols a:hover {
-  color: orange;
+  color: #ffa600;
   transform: translateX(5px);
   text-shadow: 1px 1px 5px rgba(255, 165, 0, 0.3);
+}
+
+
+.image-box {
+  position: relative;
+}
+
+.image-box img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.favorite-icon {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: rgba(255, 255, 255, 0.9);
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.favorite-icon i {
+  font-size: 18px;
+  color: #555;
+  transition: 0.3s ease;
+}
+
+.favorite-icon:hover {
+  transform: scale(1.1);
+}
+
+
+.cart-item {
+  position: relative;
+}
+
+#cart-count {
+  position: absolute;
+  top: -8px;
+  right: -10px;
+  background: red;
+  color: white;
+  font-size: 11px;
+  min-width: 18px;
+  height: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  font-weight: bold;
+} 
+
+/* Cart badge */
+.cart-link {
+  font-size: 20px;
 }

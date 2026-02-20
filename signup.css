@@ -1,4 +1,4 @@
-body {
+/* body {
     font-family: sans-serif;
     margin: 0;
     background-color: #f4f4f4;
@@ -81,19 +81,19 @@ h1 {
 
 .email-signup {
     border-color: #007bff;
-    /* Example color */
+    
     color: #007bff;
 }
 
 .facebook-signup {
     border-color: #1877f2;
-    /* Example color */
+    
     color: #1877f2;
 }
 
 .google-signup {
     border-color: #db4437;
-    /* Example color */
+  
     color: #db4437;
 }
 
@@ -122,4 +122,158 @@ h1 {
     max-width: 2px;
     justify-content: left;
 } 
+ */
 
+
+
+ *{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:'Segoe UI', sans-serif;
+}
+
+body{
+  background:#f5f5f5;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  height:100vh;
+}
+
+.container{
+  width:1000px;
+  height:600px;
+  display:flex;
+  background:white;
+  border-radius:15px;
+  overflow:hidden;
+  box-shadow:0 10px 30px rgba(0,0,0,0.1);
+}
+
+/* Left Image */
+.image-section{
+  flex:1;
+}
+
+.image-section img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+}
+
+/* Right Section */
+.form-section{
+  flex:1;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  padding:40px;
+}
+
+.form-box{
+  width:100%;
+  max-width:380px;
+}
+
+.form-box h1{
+  font-size:28px;
+  margin-bottom:10px;
+}
+
+.form-box p{
+  color:#666;
+  margin-bottom:20px;
+}
+
+form input{
+  width:100%;
+  padding:12px;
+  margin-bottom:15px;
+  border:1px solid #ddd;
+  border-radius:6px;
+  font-size:14px;
+}
+
+.password-box {
+  position: relative;
+  margin-bottom: 15px;
+}
+
+.password-box input {
+  width: 100%;
+  padding: 12px;
+  padding-right: 40px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+}
+
+.password-box i {
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  color: #777;
+}
+
+
+.main-btn{
+  width:100%;
+  padding:12px;
+  background:rgb(255, 181, 45);
+  border:none;
+  color:white;
+  font-size:15px;
+  border-radius:6px;
+  cursor:pointer;
+  margin-top:5px;
+}
+
+.main-btn:hover{
+  background:rgb(255, 166, 0);
+}
+
+.divider{
+  text-align:center;
+  margin:18px 0;
+  color:#999;
+}
+
+.social-btn{
+  width:100%;
+  padding:10px;
+  margin-bottom:10px;
+  border:1px solid #ddd;
+  border-radius:6px;
+  background:white;
+  cursor:pointer;
+}
+
+.social-btn:hover{
+  background:#f3f3f3;
+}
+
+.switch-text{
+  text-align:center;
+  margin-top:15px;
+  font-size:14px;
+}
+
+.switch-text a{
+  color:#007bff;
+  text-decoration:none;
+}
+
+/* Responsive */
+@media(max-width:768px){
+  .container{
+    flex-direction:column;
+    width:95%;
+    height:auto;
+  }
+
+  .image-section{
+    height:250px;
+  }
+}
