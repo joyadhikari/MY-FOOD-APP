@@ -150,3 +150,33 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 
 });
+
+
+// ===============================
+// 🏷️ CATEGORY FILTER
+// ===============================
+
+document.addEventListener("DOMContentLoaded", function () {
+
+  const categories = document.querySelectorAll(".category");
+  const recipeCards = document.querySelectorAll(".recipe-card");
+
+  categories.forEach(category => {
+    category.addEventListener("click", () => {
+
+      const filter = category.dataset.filter;
+
+      recipeCards.forEach(card => {
+
+        if (card.dataset.category === filter) {
+          card.style.display = "block";
+        } else {
+          card.style.display = "none";
+        }
+
+      });
+
+    });
+  });
+
+});

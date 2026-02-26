@@ -365,7 +365,7 @@ footer {
 }
 
 
-.cart-item {
+/* .cart-item {
   position: relative;
 }
 
@@ -383,8 +383,69 @@ footer {
   justify-content: center;
   border-radius: 50%;
   font-weight: bold;
-} 
+}  */
 
+
+
+/* ===== Cart Counter Badge ===== */
+
+.cart-item {
+  position: relative;
+}
+
+#cart-count {
+  position: absolute;
+  top: -8px;
+  right: -10px;
+  background: red;
+  color: white;
+  font-size: 12px;
+  padding: 2px 6px;
+  border-radius: 50%;
+  font-weight: bold;
+}
+
+
+
+/* ===== Add To Cart Button Style ===== */
+
+.price-cart {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 12px;
+}
+
+.price {
+  font-weight: bold;
+  font-size: 16px;
+  color: #ff4d4d;
+}
+
+/* Modern Button */
+.add-cart-btn {
+  padding: 8px 14px;
+  border: none;
+  border-radius: 25px;
+  background: linear-gradient(135deg, #ff512f, #dd2476);
+  color: #fff;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-weight: 500;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+}
+
+/* Hover Effect */
+.add-cart-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.25);
+}
+
+/* Click Effect */
+.add-cart-btn:active {
+  transform: scale(0.95);
+}
 /* Cart badge */
 .cart-link {
   font-size: 20px;

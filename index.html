@@ -23,14 +23,14 @@
         <ul>
 
           <li><a href="#"><i class="fa-solid fa-house"></i></a></li>
-           <!-- <li><a href="#"><i class="fa-solid fa-Manu"></i> Manu</a></li> -->
+          <!-- <li><a href="#"><i class="fa-solid fa-Manu"></i> Manu</a></li> -->
           <!-- <li><a href="#"><i class="fa-solid fa-upload"></i> Upload</a></li> -->
           <!-- <li><a href="./cart.html"><i class="fa-solid fa-bookmark"></i> Cart</a></li> -->
-            <li class="cart-item"><a href="cart.html"><i class="fa-solid fa-cart-shopping"></i>
-                <span id="cart-count">0</span>
-              </a>
-            </li>
-          
+          <li class="cart-item"><a href="cart.html"><i class="fa-solid fa-cart-shopping"></i>
+              <span id="cart-count"></span>
+            </a>
+          </li>
+
 
         </ul>
       </nav>
@@ -157,6 +157,34 @@
               </div>
             </div>
 
+            <div class="recipe-card" data-category="vegetarian">
+              <div class="image-box">
+                <img src="/image/food.jpg" alt="Vegetarian Salad">
+                <div class="favorite-icon">
+                  <i class="fa-regular fa-heart"></i>
+                </div>
+              </div>
+              <h4>Fresh Garden Salad</h4>
+              <div class="price-cart">
+                <span class="price">$12.99</span>
+                <button class="add-cart-btn">+ Add to Cart</button>
+              </div>
+            </div>
+
+
+            <div class="recipe-card" data-category="vegetarian">
+              <div class="image-box">
+                <img src="/image/food.jpg" alt="Vegetable Stir Fry">
+              </div>
+
+              <h4>Vegetable Stir Fry</h4>
+
+              <div class="price-cart">
+                <span class="price">$14.99</span>
+                <button class="add-cart-btn">+ Add to Cart</button>
+              </div>
+            </div>
+
             <!-- <div class="recipe-card">
 
               <div class="image-container">
@@ -245,6 +273,7 @@
     </div>
   </footer>
   <script src="script.js"></script>
+  <script src="cart.js"></script>
 </body>
 
 </html>

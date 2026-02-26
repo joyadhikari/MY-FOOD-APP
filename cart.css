@@ -68,6 +68,33 @@ body{
   border-radius:8px;
   margin-bottom:15px;
 }
+/* ========================= */
+/* SCROLLABLE CART ITEMS */
+/* ========================= */
+
+#cart-items {
+  max-height: 300px;   /* Height before scroll appears */
+  overflow-y: auto;    /* Vertical scroll */
+  padding-right: 8px;  /* Space for scrollbar */
+}
+
+/* Optional: Smooth Scrollbar Style */
+#cart-items::-webkit-scrollbar {
+  width: 6px;
+}
+
+#cart-items::-webkit-scrollbar-thumb {
+  background: #ff6b6b;
+  border-radius: 10px;
+}
+
+#cart-items::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+.cart-section {
+  overflow-y: auto;
+}
 
 .item-info h3{
   font-size:16px;

@@ -1,29 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>My Cart - Food Recipe</title>
   <link rel="stylesheet" href="cart.css">
 </head>
+
 <body>
 
-<div class="container">
+  <div class="container">
 
-  <!-- Left Image Section -->
-  <div class="image-section">
-    <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836" alt="Food Image">
-  </div>
+    <!-- Left Image Section -->
+    <div class="image-section">
+      <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836" alt="Food Image">
+    </div>
 
-  <!-- Right Cart Section -->
-  <div class="cart-section">
-    <div class="cart-box">
+    <!-- Right Cart Section -->
+    <div class="cart-section">
+      <div class="cart-box">
+        <div id="cart-items"></div>
+        <h1>🛒 My Cart</h1>
+        <p>Review your selected delicious meals.</p>
 
-      <h1>🛒 My Cart</h1>
-      <p>Review your selected delicious meals.</p>
-
-      <!-- Cart Items -->
-      <div class="cart-item">
+        <!-- Cart Items -->
+        <!-- <div class="cart-item">
         <div class="item-info">
           <h3>White Sauce Pasta</h3>
           <p>₹199</p>
@@ -45,21 +47,23 @@
           <span>2</span>
           <button>+</button>
         </div>
+      </div> -->
+
+        <!-- Total Section -->
+        <div class="total">
+          <h2></h2>
+        </div>
+
+        <button class="checkout-btn">Proceed to Checkout</button>
+
       </div>
-
-      <!-- Total Section -->
-      <div class="total">
-        <h2>Total: ₹497</h2>
-      </div>
-
-      <button class="checkout-btn">Proceed to Checkout</button>
-
     </div>
+
   </div>
 
-</div>
-
+  <script src="cart.js"></script>
 </body>
+
 </html>
 
 
@@ -114,6 +118,3 @@
     <script src="cart.js"></script>
 </body>
 </html> -->
-
-
-
